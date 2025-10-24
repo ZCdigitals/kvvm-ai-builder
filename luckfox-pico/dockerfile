@@ -4,4 +4,4 @@ COPY toolchain /workspace/toolchain
 COPY prebuilt /workspace/prebuilt
 COPY toolchain.cmake /workspace/
 
-# docker build -t build:luckfox-pico .
+# docker build -t builder:luckfox-pico .
