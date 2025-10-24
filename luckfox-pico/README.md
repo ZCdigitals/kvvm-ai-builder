@@ -17,6 +17,7 @@ git clone https://gitee.com/LuckfoxTECH/luckfox-pico.git
 - `toolchain`, copied from `<path to luckfox-pico>/tools/linux/toolchain`
 - `prebuilt/lib` `prebuilt/usr/lib`, copied from `<path to luckfox-pico>/sysdrv/source/buildroot/buildroot-2023.02.6/output/target`
   also cloud be copied from target system
+- `prebuilt/oem/usr/lib`, copied from target system
 
 ## CMake
 

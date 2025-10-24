@@ -18,6 +18,7 @@ set(
   "${TOOLCHAIN_PATH}"
   "${TOOLCHAIN_PATH}/${TOOLCHAIN_PREFIX}/sysroot"
   "/workspace/prebuilt"
+  "/workspace/prebuilt/oem/usr/lib"
 )
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
