@@ -1,6 +1,7 @@
 
 # set toolchain path and prefix
-set(TOOLCHAIN_PATH "/workspace/toolchain/arm-rockchip830-linux-uclibcgnueabihf")
+set(TOOLCHAIN_ROOT "/workspace")
+set(TOOLCHAIN_PATH "${TOOLCHAIN_ROOT}/toolchain/arm-rockchip830-linux-uclibcgnueabihf")
 set(TOOLCHAIN_PREFIX "arm-rockchip830-linux-uclibcgnueabihf")
 
 # set compiler
@@ -17,8 +18,8 @@ set(
   CMAKE_FIND_ROOT_PATH
   "${TOOLCHAIN_PATH}"
   "${TOOLCHAIN_PATH}/${TOOLCHAIN_PREFIX}/sysroot"
-  "/workspace/prebuilt"
-  "/workspace/prebuilt/oem/usr/lib"
+  "${TOOLCHAIN_ROOT}/prebuilt"
+  "${TOOLCHAIN_ROOT}/prebuilt/oem"
 )
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
