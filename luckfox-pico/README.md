@@ -4,7 +4,9 @@ This is builder for luckfox cross compile.
 
 ## Files
 
-All files are copied from `luckfox-pico`.
+All files in `prebuilt` and `toolchain` are copied from `luckfox-pico`.
+
+If you want to build image by yourself, you may get the `luckfox-pico` repo as below.
 
 ```bash
 git clone https://github.com/LuckfoxTECH/luckfox-pico.git
