@@ -19,7 +19,7 @@ jobs:
 
       - name: Package luckfox-pico
         run: |
-          tar -czf arm-rockchip830-linux-uclibcgnueabihf.tar.gz luckfox-pico
+          tar -czf arm-rockchip830-linux-uclibcgnueabihf.tar.gz -C luckfox-pico .
 
       - name: Create Release and Upload Assets
         uses: softprops/action-gh-release@v2
