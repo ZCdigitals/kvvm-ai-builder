@@ -19,8 +19,7 @@ jobs:
 
       - name: Package luckfox-pico
         run: |
-          tar -czf arm-rockchip830-linux-uclibcgnueabihf-toolchain.tar.gz luckfox-pico/toolchain
-          tar -czf arm-rockchip830-linux-uclibcgnueabihf-prebuilt.tar.gz luckfox-pico/prebuilt
+          tar -czf arm-rockchip830-linux-uclibcgnueabihf.tar.gz luckfox-pico
 
       - name: Create Release and Upload Assets
         uses: softprops/action-gh-release@v2
@@ -28,5 +27,4 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
           files: |
-            arm-rockchip830-linux-uclibcgnueabihf-toolchain.tar.gz
-            arm-rockchip830-linux-uclibcgnueabihf-prebuilt.tar.gz
+            arm-rockchip830-linux-uclibcgnueabihf.tar.gz
