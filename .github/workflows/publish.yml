@@ -2,8 +2,8 @@ name: Release toolchian
 
 on: 
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
   workflow_dispatch:
 
 jobs:
@@ -25,6 +25,8 @@ jobs:
       - name: Create Release and Upload Assets
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
           files: |
             arm-rockchip830-linux-uclibcgnueabihf-toolchain.tar.gz
             arm-rockchip830-linux-uclibcgnueabihf-prebuilt.tar.gz
